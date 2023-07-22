@@ -16,14 +16,7 @@ def hashKey(key):
     return hashValue
 
 def checkUser(name, access_key):
-    for user in users:
-        if name.lower() == user.lower():
-            if users[user]['access-key'] == hashKey(access_key):
-                return [True, user, "NO_ERROR"]
-            else:
-                return [True, user, "ACCESS-KEY-INVALID-ERROR"]
-            
-    return [False, "NONE", "NO_ERROR"]
+    # Your code here...
 
 
 while True:
